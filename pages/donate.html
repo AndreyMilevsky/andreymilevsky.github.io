@@ -4,60 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation</title>
-    <style>
-        body {
-            font-family: 'JetBrains Mono', monospace;
-            background-color:#F6F5EE;
-        }
-    </style>
+    <link rel="stylesheet" href="donatestyle.css">
+    <script type="module" src="./script.js"></script>
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com"
+>
+<link
+href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+rel="stylesheet"
+>
+
 <body>
-    
-    <div style="display: flex; justify-content: center; gap: 60px; margin-top: 375px;">
-        <div style="width: 160px; height: 160px; display: flex; justify-content: center; align-items: center;">
-            <img src="../images/bitcoin1.png" style="height: 90px; width: 90px; cursor: pointer;" onclick="swap(this, 'bitcoin1.png', 'btc.png')">
-        </div>
-        <div style="width: 160px; height: 160px; display: flex; justify-content: center; align-items: center;">
-            <img src="../images/ethereum1.png" style="height: 90px; width: 90px; cursor: pointer;" onclick="swap(this, 'ethereum1.png', 'eth.png')">
-        </div>
-        <div style="width: 160px; height: 160px; display: flex; justify-content: center; align-items: center;">
-            <img src="../images/solana1.png" style="height: 90px; width: 90px; cursor: pointer;" onclick="swap(this, 'solana1.png', 'sol.png')">
-        </div>
-        
+
+    <header class="topbar">
+    <h1 class="name">Andrey Milevsky</h1>
+    <a href="https://github.com/AndreyMilevsky" target="_blank">
+    <img class="githubicon" src="../images/github.svg">
+    </a>
+    </header>
+
+    <div class="cryptotext">
+        <div class="crypto" id="crypto1">bitcoin</div>
+        <div class="crypto" id="crypto2">ethereum</div>
+        <div class="crypto" id="crypto3">solana</div>
     </div>
 
-    <div style="display: flex; justify-content: center; gap: 100px;">
-        <div>
-            bitcoin [BTC]
-        </div>
-        <div>
-            ethereum [ETH]
-        </div>
-        <div>
-            solana [SOL]
-        </div>
+    <div class="bottom-bar">
+        <a class="bottom-bar-text" href="/index.html">back to main page</a>
+        : 
+        thanks for supporting me!
     </div>
 
-    <div style="text-align: center; color: #3A3A3A; margin-top: 330px;">
-            <a href="/index.html" style="text-decoration:none; color: #8e8980;">back to main page</a>
-            : 
-            thanks for supporting me!
-    </div>
-    
-    <script>
-    function swap(img, logoFile, qrFile) {
-    if (img.src.includes(qrFile)) {
-        img.src = "../images/" + logoFile;
-        img.style.height = "90px";
-        img.style.width = "90px";
-    } else {
-        img.src = "../images/" + qrFile;
-        img.style.height = "160px";
-        img.style.width = "160px";
-        }
-    }   
-    </script>
+
 </body>
 </html>

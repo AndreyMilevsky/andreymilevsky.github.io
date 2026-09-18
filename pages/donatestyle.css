@@ -1,0 +1,50 @@
+body{
+    font-family: 'JetBrains Mono', monospace;
+    background-color:#f1f0e3;
+}
+
+.topbar{
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
+    color: #3A3A3A;
+    border-bottom: 1px solid #E0DFD8; 
+    max-width: auto;
+}
+.githubicon{
+    height: 40px;
+    width: 40px;
+    margin-right: 25px;
+    margin-top: 10px 
+}
+
+.crypto{
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    width: auto;
+    text-align: center;
+
+}
+
+.cryptotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 10vh;
+    height: 77vh;
+}
+
+.bottom-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3A3A3A;
+    height: 12vh;
+}
+
+.bottom-bar-text{
+    text-decoration:none; 
+    color: #8e8980;
+}
